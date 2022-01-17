@@ -8,8 +8,12 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - remove_seal
-  - update_bl
+  - remove_seal:
+    use_entities:
+    - sealno
+  - update_bl:
+    use_entities:
+    - bl_number
 
 entities:
   - sealno
@@ -41,3 +45,4 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  
